@@ -8,10 +8,7 @@
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "start": "ts-node src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "test": "jest",
-    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback",
-    "knex:seed": "knex --knexfile knexfile.ts seed:run"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -40,8 +37,7 @@
     "tsyringe": "^4.2.0",
     "typeorm": "^0.2.24",
     "typescript": "^3.8.3",
-    "uuidv4": "^6.0.7",
-    "yup": "^0.29.3"
+    "uuidv4": "^6.0.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
@@ -54,9 +50,8 @@
     "@types/hapi__joi": "^17.1.2",
     "@types/jest": "^25.2.1",
     "@types/jsonwebtoken": "^8.3.9",
-    "@types/multer": "^1.4.4",
+    "@types/multer": "^1.4.2",
     "@types/nodemailer": "^6.4.0",
-    "@types/yup": "^0.29.8",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-plugin-module-resolver": "^4.0.0",
